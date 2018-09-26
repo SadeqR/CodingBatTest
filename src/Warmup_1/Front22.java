@@ -1,3 +1,4 @@
+package Warmup_1;
 
 public class Front22 {
 	public String front22(String str) {

@@ -1,3 +1,4 @@
+package Warmup_1;
 
 public class StartHi {
 	public boolean startHi(String str) {

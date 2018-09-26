@@ -1,3 +1,4 @@
+package Warmup_1;
 
 public class NotString {
 	public String notString(String str) {

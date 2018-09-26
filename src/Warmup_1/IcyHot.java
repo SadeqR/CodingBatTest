@@ -1,3 +1,4 @@
+package Warmup_1;
 
 public class IcyHot {
 	public boolean icyHot(int temp1, int temp2) {

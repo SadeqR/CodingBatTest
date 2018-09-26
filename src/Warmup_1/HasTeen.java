@@ -1,3 +1,4 @@
+package Warmup_1;
 
 public class HasTeen {
 	public boolean hasTeen(int a, int b, int c) {

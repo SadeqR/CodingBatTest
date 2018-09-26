@@ -1,3 +1,4 @@
+package Warmup_1;
 
 public class nearHundred {
 	public boolean nearHundred(int n) {

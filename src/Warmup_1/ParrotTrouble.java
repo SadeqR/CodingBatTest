@@ -1,3 +1,4 @@
+package Warmup_1;
 
 public class ParrotTrouble {
 	public boolean parrotTrouble(boolean talking, int hour) {
