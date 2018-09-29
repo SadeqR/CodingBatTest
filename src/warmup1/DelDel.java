@@ -1,4 +1,4 @@
-package Warmup_1;
+package warmup1;
 
 public class DelDel {
 	public String delDel(String str) {

@@ -1,4 +1,4 @@
-package Warmup_1;
+package warmup1;
 
 public class IntMax {
 	public int intMax(int a, int b, int c) {

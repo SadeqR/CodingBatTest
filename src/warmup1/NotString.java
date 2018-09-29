@@ -1,4 +1,4 @@
-package Warmup_1;
+package warmup1;
 
 public class NotString {
 	public String notString(String str) {

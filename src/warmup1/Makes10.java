@@ -1,4 +1,4 @@
-package Warmup_1;
+package warmup1;
 
 public class Makes10 {
 	public boolean makes10(int a, int b) {

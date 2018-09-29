@@ -1,4 +1,4 @@
-package Warmup_1;
+package warmup1;
 
 public class HasTeen {
 	public boolean hasTeen(int a, int b, int c) {

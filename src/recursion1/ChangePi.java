@@ -1,4 +1,4 @@
-package Recursion_1;
+package recursion1;
 
 public class ChangePi {
 	public String changePi(String str) {

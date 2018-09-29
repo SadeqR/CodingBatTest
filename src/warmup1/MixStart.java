@@ -1,4 +1,4 @@
-package Warmup_1;
+package warmup1;
 
 public class MixStart {
 	public boolean mixStart(String str) {

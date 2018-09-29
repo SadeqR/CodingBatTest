@@ -1,4 +1,4 @@
-package Warmup_1;
+package warmup1;
 
 public class Front3 {
 	public String front3(String str) {
