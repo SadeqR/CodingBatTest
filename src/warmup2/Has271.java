@@ -15,10 +15,12 @@ package warmup2;
 public class Has271 {
 	public boolean has271(int[] nums) {
 		int x = 0;
-		for(int i =0; i<nums.length; i++) {
-			if(i+2==nums.length) break;
-			int diff = Math.abs(nums[i+2]-(nums[i]-1));
-			if(nums[i+1]==nums[i]+5 && diff <= 2) return true;
+		for (int i = 0; i < nums.length; i++) {
+			if (i + 2 == nums.length)
+				break;
+			int diff = Math.abs(nums[i + 2] - (nums[i] - 1));
+			if (nums[i + 1] == nums[i] + 5 && diff <= 2)
+				return true;
 		}
 		return false;
 	}
