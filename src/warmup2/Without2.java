@@ -16,8 +16,10 @@ without2("Hi") → ""
 
 public class Without2 {
 	public String without2(String str) {
+		//check string is larger than 1 character and check/create new string
 		if(str.length()>1 && str.substring(0, 2).equals(str.substring(str.length()-2, str.length())))
 			return str.substring(2, str.length());
+		//if string is of size 1 return that
 		return str;
 	}
 }
