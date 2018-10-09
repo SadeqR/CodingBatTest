@@ -12,7 +12,7 @@ makePi() → [3, 1, 4]
 
 public class MakePi {
 	public int[] makePi() {
-		  int[] result = {3,4,1};
+		  int[] result = {3,1,4};
 		  return result;
 	}
 }
