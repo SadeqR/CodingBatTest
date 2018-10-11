@@ -15,10 +15,10 @@ makeLast([3]) → [0, 3]
 
 public class MakeLast {
 	public int[] makeLast(int[] nums) {
+		//new array with double array size
 		int[] result = new int[nums.length * 2];
-		for(int i=0; i<result.length-1; i++)
-			result[i]= 0;
-		result[result.length-1]= nums[nums.length-1];
+		//adding last index value to end of new array
+		result[result.length - 1] = nums[nums.length - 1];
 		return result;
 	}
 }
