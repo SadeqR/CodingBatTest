@@ -13,7 +13,9 @@ start1([1, 2], []) → 1
 
 public class Start1 {
 	public int start1(int[] a, int[] b) {
+		//counter to counter 1's
 		int counter=0;
+		//check if arrays are at least of length 1
 		if(a.length>0 && a[0]==1)
 			counter++;
 		if(b.length>0 && b[0]==1)
