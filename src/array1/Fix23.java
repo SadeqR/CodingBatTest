@@ -13,15 +13,14 @@ fix23([1, 2, 1]) → [1, 2, 1]
 
 public class Fix23 {
 	public int[] fix23(int[] nums) {
-		//check if there is a 2 followed by 3
-		if (nums[0] == 2 && nums[1] == 3 || nums[1] == 2 && nums[2] == 3)
-			//loop through and starting from 2nd index and if it equals
-			//3 and has a 2 at prev index, replace the 3 by a 0 in nums array
-			for (int i = 1; i < nums.length; i++)
-				if (nums[i] == 3 && nums[i-1]==2) {
-					nums[i] = 0;
-					break;
-				}
+		// check if there is a 2 followed by 3
+		// loop through and starting from 2nd index and if it equals
+		// 3 and has a 2 at prev index, replace the 3 by a 0 in nums array
+		for (int i = 1; i < nums.length; i++)
+			if (nums[i] == 3 && nums[i - 1] == 2) {
+				nums[i] = 0;
+				break;
+			}
 		return nums;
 	}
 }
