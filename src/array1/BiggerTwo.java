@@ -14,7 +14,8 @@ biggerTwo([1, 1], [1, 2]) → [1, 2]
 
 public class BiggerTwo {
 	public int[] biggerTwo(int[] a, int[] b) {
-		  if((a[0]+a[1])<(b[0]+b[1])) return b;
-		  else return a;
+		// check if sum of b is bigger, if not return a as it will either
+		// be bigger or same size
+		return (a[0] + a[1]) < (b[0] + b[1]) ? b : a;
 	}
 }
