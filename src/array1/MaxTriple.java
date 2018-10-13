@@ -22,11 +22,14 @@ public class MaxTriple {
 
 	public static int maxTriple(int[] nums) {
 		int largest;
+		//check first index against last 2
 		if (nums[0] > nums[((nums.length + 1) / 2) - 1]) {
 			if (nums[0] > nums[nums.length - 1])
 				largest = nums[0];
 			else
-				largest = nums[(nums.length / 2) - 1];
+				largest = nums[(nums.length + 1 / 2) - 1];
+		//check 2nd index against last index if 1st index is smaller 
+		//than 2nd index
 		} else if (nums[((nums.length + 1) / 2) - 1] >= nums[nums.length - 1]) {
 			largest = nums[((nums.length + 1) / 2) - 1];
 		} else {
