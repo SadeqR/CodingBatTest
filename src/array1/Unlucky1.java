@@ -14,9 +14,9 @@ unlucky1([1, 1, 1]) → false
 */
 public class Unlucky1 {
 	public boolean unlucky1(int[] nums) {
-		//if array size is bigger than 1 check array
-		//first loop to check first 2 indexes
-		//second loop to check last 2 indexes
+		// if array size is bigger than 1 check array
+		// first loop to check first 2 indexes
+		// if statement to check last 2 indexes
 		if (nums.length > 1) {
 			for (int i = 0; i < 2; i++) {
 				if ((i + 1) >= nums.length)
@@ -24,12 +24,8 @@ public class Unlucky1 {
 				if (nums[i] == 1 && nums[i + 1] == 3)
 					return true;
 			}
-			for (int i = nums.length - 2; i < nums.length; i++) {
-				if ((i + 1) >= nums.length)
-					break;
-				if (nums[i] == 1 && nums[i + 1] == 3)
-					return true;
-			}
+			if (nums[nums.length - 2] == 1 && nums[nums.length - 1] == 3)
+				return true;
 		}
 		return false;
 	}
