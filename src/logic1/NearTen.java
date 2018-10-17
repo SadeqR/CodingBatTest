@@ -13,6 +13,7 @@ nearTen(19) → true
 */
 public class NearTen {
 	public boolean nearTen(int num) {
-		  
+		//if reminder is 0,1,2,8,9 return true
+		return num%10<3 || num%10>7? true : false;
 	}
 }
