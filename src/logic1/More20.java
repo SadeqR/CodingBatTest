@@ -1,4 +1,5 @@
 package logic1;
+
 /*
 https://codingbat.com/prob/p118290
 
@@ -12,6 +13,6 @@ more20(22) → true
 */
 public class More20 {
 	public boolean more20(int n) {
-		  return n%20==1 || n%20==2 ? true : false;
+		return n % 20 == 1 || n % 20 == 2 ? true : false;
 	}
 }
