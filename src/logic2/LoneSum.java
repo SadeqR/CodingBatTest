@@ -13,9 +13,10 @@ loneSum(3, 3, 3) → 0
 */
 public class LoneSum {
 	public int loneSum(int a, int b, int c) {
-		  if(a==b || a==c) return b+c;
-		  if(a==b || b==c) return a+c;
-		  if(a==c || b==c) return a+b;
+		  if(a==b && b==c) return 0;
+		  if(a==b) return c;
+		  if(c==b) return a;
+		  if(a==c) return b;
 		  return a+b+c;
 	}
 }
