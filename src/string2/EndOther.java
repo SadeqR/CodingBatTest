@@ -1,4 +1,4 @@
-package logic2;
+package string2;
 /*
 https://codingbat.com/prob/p126880
 
