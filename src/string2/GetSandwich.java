@@ -26,6 +26,7 @@ public class GetSandwich {
 			  }
 			  if(str.substring(i, i+5).equals("bread") && breadFound==true) {
 				  lastIndex = i;
+				  //break -- with this line i get index out of bounds -5
 			  }
 		  }
 		  result = str.substring(firstIndex, lastIndex);
