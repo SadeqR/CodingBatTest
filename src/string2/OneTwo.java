@@ -17,7 +17,7 @@ public class OneTwo {
 		  int n = 0;
 		  for(int i=0; i<noOf3; i++, n=n+3) {
 			  if(n>=str.length()) break;
-			  result = str.substring(n+1, n+3) + str.charAt(n);
+			  result += str.substring(n+1, n+3) + str.charAt(n);
 		  }
 		  return result;
 	}
