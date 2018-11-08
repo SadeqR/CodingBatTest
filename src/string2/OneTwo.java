@@ -13,13 +13,11 @@ public class OneTwo {
 	public String oneTwo(String str) {
 		  String result = "";
 		  int noOf3 = str.length()/3;
-		  if(str.length()<3) return str;
+		  if(str.length()<3) return result;
 		  int n = 0;
-		  for(int i=0; i<=noOf3; i++, n=n+3) {
-			  result = str.substring(n+1, n+2) + str.charAt(n);
-		  }
-		  if(str.length()%3!=0) {
-			  result = result + str.substring(noOf3*2, str.length());
+		  for(int i=0; i<noOf3; i++, n=n+3) {
+			  if(n>=str.length()) break;
+			  result = str.substring(n+1, n+3) + str.charAt(n);
 		  }
 		  return result;
 	}
