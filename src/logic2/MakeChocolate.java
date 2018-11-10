@@ -14,8 +14,11 @@ makeChocolate(4, 1, 7) → 2
 */
 public class MakeChocolate {
 	public int makeChocolate(int small, int big, int goal) {
-		if(goal>small+(big*5)) return -1;  
+		if(goal>small+(big*5)) return -1;
+		if(goal<small+(big*5) && (goal%5>small)) return -1;
 		else if((big*5)>=goal) return goal%5;
+		//there is not enough big bricks to fill to goal but we know 
+		//there's enough bricks altogether ie small, so return the diff
 		else return goal-big*5;
 	}
 }
