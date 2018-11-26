@@ -18,6 +18,6 @@ public class No14 {
 			if(nums[i]==1) no1 = true;
 			if(nums[i]==4) no4 = true;
 		}
-		return no1 || no4? false:true;
+		return (!no1 || !no4)? true:false;
 	}
 }
