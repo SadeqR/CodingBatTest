@@ -19,7 +19,6 @@ public class TwoTwo {
 				  if(nums[i]!=2) return false;
 				  for(;i<nums.length && nums[i]==2; i++) {}
 			  }
-			  
 		  }
 		  return true;
 	}
