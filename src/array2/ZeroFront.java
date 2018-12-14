@@ -16,22 +16,14 @@ zeroFront([1, 0]) → [0, 1]
 
 public class ZeroFront {
 	public int[] zeroFront(int[] nums) {
-		  int counter = 0;
-		  int temp = 0;
-		  int[] result = new int[nums.length];
+		  int index = 0;
 		  for(int i=0; i<nums.length; i++) {
-			  if(nums[i]==0) counter++;
-		  }
-		  for(int j=0; j<counter; j++) {
-			  result[j] = 0;
-			  temp = j;
-		  }
-		  for(int x=0; x<nums.length; x++) {
-			  if((temp+1+x)<=nums.length) break;
-			  if(nums[x]!=0) {
-				  result[temp+1+x] = nums[x];
+			  if(nums[i]==0) {
+				  nums[i]=nums[index];
+				  nums[index]=0;
+				  index++;
 			  }
 		  }
-		  return result;
+		  return nums;
 	}
 }
