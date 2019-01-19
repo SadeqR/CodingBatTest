@@ -14,10 +14,7 @@ public class StrDist {
 	public int strDist(String str, String sub) {
 		  if(str.length() < sub.length()) {
 			  return 0;
-		  }   
-		  else if(str.equals(sub)) {
-			  return str.length();
-		  } 
+		  }
 		  else if(str.startsWith(sub)) {
 			  if(str.endsWith(sub)) return str.length();
 			  else return strDist(str.substring(0,str.length()-1), sub);
