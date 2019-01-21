@@ -16,19 +16,20 @@ withoutString("Hello there", "x") → "Hello there"
 */
 public class WithoutString {
 	public String withoutString(String base, String remove) {
-		  base = base.toLowerCase();
-		  remove = remove.toLowerCase();
-		  String result = "";
-		  String temp = "";
-		  
-		  for(int i=0; i<base.length(); i++) {
-			  if(!base.substring(i, i+remove.length()).equals(remove))
-				  result += base.charAt(i) + "";
-			  else 
-				  i = i + remove.length() - 1;
-			  
-				  
-		  }
-		  return result;
+		String result = "";
+		String temp = "";
+
+		for (int i = 0; i < base.length(); i++) {
+			if (i <= base.length() - remove.length()) {
+				if (!base.toLowerCase().substring(i, i + remove.length()).equals(remove.toLowerCase()))
+					result += base.charAt(i) + "";
+				else
+					i = i + remove.length() - 1;
+			} else {
+					result += base.charAt(i) + "";
+			}
+
+		}
+		return result;
 	}
 }
