@@ -18,14 +18,17 @@ public class MirrorEnds {
 	public String mirrorEnds(String string) {
 		String result = "";
 		String start = "";
-		String end = "";
+		String temp = "";
 		for (int i = 0; i < string.length(); i++) {
 			//reset end
-			end = "";
+			temp = "";
 			start += string.charAt(i);
-			for(int j = string.length()-1; j>=0; j--) {
-				end += string.charAt(j);
-				if(end.equals(start));
+			for(int j = start.length()-1; j>=0; j--) {
+				//reverse start and store in temp
+				temp += string.charAt(j);
+				//check if start is at end (but reversed)
+				if(temp.equals(string.substring(string.length()-1-i, string.length())))
+				//return start (non-reversed version of mirror string)
 				result = start;
 			}
 		}
