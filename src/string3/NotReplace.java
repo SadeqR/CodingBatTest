@@ -24,7 +24,6 @@ public class NotReplace {
 				  result += "is not";
 				  i++;
 			  } else {
-				  result += str.charAt(i);
 			  }
 		  }
 		  return result;
